@@ -24,8 +24,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "InputAmountFormattedWhileFocused"
 include(":app")
-include(":core:mvi")
-include(":wallet-deposit:domain")
-include(":wallet-deposit:data")
-include(":wallet-deposit:presentation")
- 
+include(":core:local")
+include(":core:ui")
+include(":feature:inputAmount")
