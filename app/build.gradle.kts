@@ -1,8 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
-    alias(libs.plugins.hilt.android)
-    alias(libs.plugins.kotlin.android.ksp)
 }
 
 android {
@@ -46,8 +44,6 @@ dependencies {
     implementation(project(":core:ui"))
     implementation(project(":feature:inputAmount"))
 
-    implementation(libs.hilt)
-    ksp(libs.hilt.compiler)
 
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))

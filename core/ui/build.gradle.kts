@@ -48,8 +48,6 @@ dependencies {
     api(libs.androidx.lifecycle.runtime.ktx)
     api(libs.androidx.lifecycle.viewmodel.compose)
     api(platform(libs.androidx.compose.bom))
-    api(libs.coil)
-    api(libs.bundles.orbit)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

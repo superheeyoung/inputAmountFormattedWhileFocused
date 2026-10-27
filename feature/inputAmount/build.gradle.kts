@@ -1,8 +1,6 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.compose)
-    alias(libs.plugins.hilt.android)
-    alias(libs.plugins.kotlin.android.ksp)
 }
 
 android {
@@ -42,9 +40,6 @@ android {
 dependencies {
     implementation(project(":core:ui"))
 
-    implementation(libs.hilt)
-    implementation(libs.hilt.compose.navigation)
-    ksp(libs.hilt.compiler)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
